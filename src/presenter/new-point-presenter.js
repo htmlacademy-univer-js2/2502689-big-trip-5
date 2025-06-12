@@ -63,3 +63,4 @@ export default class NewTaskPresenter {
     document.removeEventListener('keydown', this.#escKeyHandler);
   }
 }
+

@@ -2,7 +2,10 @@ import AbstractStatefulView from '../framework/view/abstract-stateful-view';
 import { TIME_FORMATS, EVENT_TYPES} from '../const';
 import { formatDate } from '../utils';
 import flatpickr from 'flatpickr';
+<<<<<<< HEAD
 import he from 'he';
+=======
+>>>>>>> 32493f5f649cbb127db071cc54b88fc975d6c20c
 
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -118,7 +121,10 @@ export default class FromEditing extends AbstractStatefulView{
   #allOffers = null;
   #rollupHadle = null;
   #formHandle = null;
+<<<<<<< HEAD
   #deleteHandle = null;
+=======
+>>>>>>> 32493f5f649cbb127db071cc54b88fc975d6c20c
   #datepickerStart = null;
   #datepickerEnd = null;
 
@@ -250,7 +256,11 @@ export default class FromEditing extends AbstractStatefulView{
     );
   }
 
+<<<<<<< HEAD
   #formHandlerSubmit = (evt) => {
+=======
+  #formSubmitHandler = (evt) => {
+>>>>>>> 32493f5f649cbb127db071cc54b88fc975d6c20c
     evt.preventDefault();
     this.#formHandle(FromEditing.parseStateToPoint(this._state));
   };
