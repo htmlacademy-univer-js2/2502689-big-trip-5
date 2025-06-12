@@ -1,11 +1,11 @@
 import {isPointPresent, isPointPast, isPointFuture} from './utils.js';
 
 
-export const EVENT_TYPES = ['taxi', 'sightseeing', 'check-in', 'flight'];
+export const EVENT_TYPES = ['taxi', 'sightseeing', 'check-in', 'flight', 'bus', 'train', 'ship', 'drive', 'restaurant'];
 
 export const TIME_FORMATS = {TIME: 'HH:mm', DAY: 'MMM D', FULL_DATE: 'D/MM/YY HH:mm', TIME_TAG_VALUE: 'YYYY-MM-DD'};
 
-export const TIME_SUFFIXES = ['H', 'D', 'M'];
+export const TIME_SUFFIXES = ['D', 'H', 'M'];
 
 
 export const FILTER_TYPES = {
@@ -26,3 +26,13 @@ export const MODE = {
   DEFAULT: 'DEFAULT',
   EDITING: 'EDITING'
 };
+
+export const SORT_TYPES = [
+  'day',
+  'event',
+  'time',
+  'price',
+  'offers'
+];
+
+export const CITIES = ['Paris', 'Amsterdam', 'Barcelona', 'Dublin', 'Vienna'];
